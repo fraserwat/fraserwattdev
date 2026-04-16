@@ -1,0 +1,31 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Socials from "@/components/Socials.astro";
+import Layout from "./Layout.astro";
+import { SITE } from "@/config";
+import { SOCIALS } from "@/constants";
+
+type Props = MarkdownLayoutProps<{ title: string }>;
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={`${frontmatter.title} | ${SITE.title}`}>
+  <Header />
+  <main id="main-content" class="app-layout">
+    <section id="about" class="app-prose mb-28 max-w-app prose-img:border-0">
+      <h1 class="mt-8 text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
+      <slot />
+      {
+        SOCIALS.length > 0 && (
+          <div class="mt-4 flex flex-wrap items-center gap-1">
+            <Socials />
+          </div>
+        )
+      }
+    </section>
+  </main>
+  <Footer />
+</Layout>
