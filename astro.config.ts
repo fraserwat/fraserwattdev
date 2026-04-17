@@ -57,6 +57,9 @@ export default defineConfig({
       }),
     },
   },
+  build: {
+    inlineStylesheets: "always",
+  },
   experimental: {
     preserveScriptOrder: true,
     fonts: [
@@ -67,6 +70,7 @@ export default defineConfig({
         fallbacks: ["monospace"],
         weights: [300, 400, 500, 600, 700],
         styles: ["normal", "italic"],
+        display: "swap",
       },
     ],
   },
