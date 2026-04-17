@@ -57,6 +57,9 @@ export default defineConfig({
       }),
     },
   },
+  build: {
+    inlineStylesheets: "always",
+  },
   experimental: {
     preserveScriptOrder: true,
     fonts: [
