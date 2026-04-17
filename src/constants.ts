@@ -1,6 +1,5 @@
 import type { Props } from "astro";
 import IconMail from "@/assets/icons/IconMail.svg";
-import IconRss from "@/assets/icons/IconRss.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
@@ -34,12 +33,6 @@ export const SOCIALS: Social[] = [
     href: "mailto:email@fraserwatt.dev",
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
-  },
-  {
-    name: "RSS",
-    href: "/rss.xml",
-    linkTitle: `${SITE.title} RSS Feed`,
-    icon: IconRss,
   },
 ] as const;
 
