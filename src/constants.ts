@@ -31,8 +31,7 @@ export const SOCIALS: Social[] = [
   },
   {
     name: "Mail",
-    // TODO: switch to a fraserwatt.dev domain email forwarding to a Google inbox
-    href: "mailto:fraserwatt1990@gmail.com",
+    href: "mailto:email@fraserwatt.dev",
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
   },

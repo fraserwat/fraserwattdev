@@ -10,4 +10,4 @@ I also play the guitar, primarily with seven strings.
 
 ## Get in touch
 
-The best way to reach me is by email or via LinkedIn — links below.
+The best way to reach me is by email — see below!
